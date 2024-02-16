@@ -2,3 +2,6 @@
 
 # apple
 .DS_Store
+
+# releases
+*.zip
