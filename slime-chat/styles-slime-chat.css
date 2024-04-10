@@ -57,6 +57,21 @@
   display: block;
 }
 
+/* Bubble mode */
+.bubble-mode.display-under .message {
+  border-color: var(--userColor);
+  padding: 0;
+}
+
+.bubble-mode.display-under .user {
+  background-color: var(--userColor);
+  color: var(--userAccessible) !important;
+}
+
+.bubble-mode.display-under .content {
+  padding: var(--padding);
+}
+
 /***************
  * User Styles *
  ***************/

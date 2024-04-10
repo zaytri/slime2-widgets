@@ -90,6 +90,7 @@ addEventListener('slime2:widget-data-update', () => {
     '--borderStyle': backgroundStyles.borderStyle,
   })
   if (backgroundStyles.fullWidth) eventList.addClass('full-width')
+  if (backgroundStyles.bubbleMode) eventList.addClass('bubble-mode')
 
   // badge settings
   if (!badges.display) eventList.addClass('hide-badges')
@@ -129,6 +130,7 @@ function onMessage(message) {
     '--userColor': user.color,
     '--userColorLight': slime2.color.light(user.color),
     '--userColorDark': slime2.color.dark(user.color),
+    '--userAccessible': slime2.color.accessibleForeground(user.color),
   })
 
   // set emote size

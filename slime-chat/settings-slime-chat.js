@@ -395,6 +395,11 @@ const backgroundSettings = defineSetting(
         description:
           '(Vertical Display Only) When enabled, the background of every message will take up the boundary width.',
       }),
+      defineSetting('Bubble Mode', 'bubbleMode', 'boolean-input', {
+        defaultValue: 'false',
+        description:
+          '(Messages Under Usernames Only) When enabled, looks more like dynamic chat bubbles.',
+      }),
       defineSetting('Border Color', 'borderColor', 'color-input', {
         defaultValue: 'transparent',
       }),
