@@ -282,6 +282,16 @@
     /* 2px blur                */ 0 0 2px var(--edgeColor);
 }
 
+.text-edge-outline-2 .message {
+  text-shadow: none;
+  -webkit-text-stroke: black;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-linecap: butt;
+  -webkit-text-stroke-linejoin: miter;
+  -webkit-text-paint-order: stroke;
+  paint-order: stroke;
+}
+
 /**************
  * Animations *
  **************/
@@ -371,3 +381,16 @@
     transform: translateX(-100%);
   }
 }
+
+/* @keyframes test {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 35px;
+  }
+}
+
+.slime2-event {
+  animation: test 0.5s forwards ease-out;
+} */
